@@ -25,7 +25,7 @@ header {
 
 /* LOGO */
 #logo {
-    width: 80px;
+    width: 70px;
 }
 
 /* regole nav */
@@ -80,7 +80,7 @@ main {
     font-weight: bold;
 }
 
-/* GESTIONE SECONDA CARD */
+/* GESTIONE SECONDA SECTION */
 #container-cards {
     background-color: rgb(47, 131, 233);
     height: 150px;
@@ -112,4 +112,50 @@ main {
 .imgLocator {
     width: 30px;
     margin-right: 16px;
+}
+
+/* GESTIONE FOOTER */
+
+/* PRIMO FOOTER  */
+#first-footer {
+    background-image: url('./assets/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom top 50px;
+    background-size: cover;
+    height: 300px;
+}
+
+#container-footer {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+h4 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+
+#container-footer li {
+    list-style: none;
+    line-height: 15px;
+}
+
+#container-footer a {
+    text-decoration: none;
+    color: gray;
+    font-size: 11px;
+}
+
+
+
+/* SECONDO FOOTER */
+#second-footer {
+    height: 100px;
+    background-color: rgb(51, 51, 51);
 }
