@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <footer>
             <section id="first-footer">
-                <div id="container-footer">
+                <div id="container-footer1">
                     <div>
                         <h4>DC COMICS</h4>
                         <ul>
@@ -50,7 +50,41 @@ export default function Footer() {
                 </div>
             </section>
             <section id="second-footer">
-
+                <section id="last-footer">
+                    <div>
+                        <button>SIGN-UP NOW!</button>
+                    </div>
+                    <div id="social-container">
+                        <div>
+                            <h6>FOLLOW US</h6>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./public/img/footer-facebook.png" alt="" className="social" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./public/img/footer-twitter.png" alt="" className="social" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./public/img/footer-youtube.png" alt="" className="social" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./public/img/footer-pinterest.png" alt="" className="social" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./public/img/footer-periscope.png" alt="" className="social" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </section>
         </footer>
     );

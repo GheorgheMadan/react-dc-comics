@@ -48,7 +48,7 @@ header {
 }
 
 .nav li a:hover {
-    padding-bottom: 40px;
+    padding-bottom: 36px;
     color: rgb(0, 110, 255);
     border-bottom: 5px solid rgb(0, 110, 255);
 }
@@ -118,14 +118,22 @@ main {
 
 /* PRIMO FOOTER  */
 #first-footer {
-    background-image: url('./assets/img/footer-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center bottom top 50px;
-    background-size: cover;
+    background-image: url('./public/img/dc-logo-bg.png'), url('./assets/img/footer-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center right 240px, center top;
+    background-size: 450px, cover;
     height: 300px;
 }
 
-#container-footer {
+#logo-bg {
+    width: 380px;
+    position: absolute;
+    position: fixed;
+    right: 300px;
+    bottom: 20px;
+}
+
+#container-footer1 {
     width: 75%;
     margin: 0 auto;
     padding-top: 20px;
@@ -141,12 +149,12 @@ h4 {
     margin-top: 15px;
 }
 
-#container-footer li {
+#container-footer1 li {
     list-style: none;
     line-height: 15px;
 }
 
-#container-footer a {
+#container-footer1 a {
     text-decoration: none;
     color: gray;
     font-size: 11px;
@@ -158,4 +166,43 @@ h4 {
 #second-footer {
     height: 100px;
     background-color: rgb(51, 51, 51);
+}
+
+#last-footer {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#last-footer button {
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border: 2px solid rgb(47, 131, 233);
+    background-color: rgb(51, 51, 51);
+}
+
+#last-footer button:hover {
+    background-color: gray;
+    border: 1px solid rgb(47, 131, 233);
+}
+
+#social-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 16px;
+}
+
+h6 {
+    font-size: 17px;
+    color: rgb(47, 131, 233);
+    margin-right: 10px;
+}
+
+.social {
+    width: 30px;
 }
