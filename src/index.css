@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+}
+
+/* regole header */
+header {
+    background-color: white;
+    height: 100px;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+#logo {
+    width: 80px;
+}
+
+/* regole nav */
+.nav {
+    display: flex;
+    gap: 15px;
+
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
