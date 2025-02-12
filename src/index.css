@@ -206,3 +206,9 @@ h6 {
 .social {
     width: 30px;
 }
+
+.social:hover {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+}
