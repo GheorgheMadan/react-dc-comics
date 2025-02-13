@@ -1,3 +1,5 @@
+import Cards from './MainComponents/Cards'
+
 // Main.jsx
 export default function Main() {
     return (
@@ -6,6 +8,9 @@ export default function Main() {
                 <div>
                     <p> --&gt; Content goes here &lt;-- </p>
                 </div>
+            </section>
+            <section id="container-cards">
+                <Cards />
             </section>
         </main>
     );

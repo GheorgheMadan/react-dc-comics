@@ -48,22 +48,26 @@ header {
 }
 
 .nav li a:hover {
-    padding-bottom: 36px;
     color: rgb(0, 110, 255);
+
+}
+
+.nav li a.active {
     border-bottom: 5px solid rgb(0, 110, 255);
+    padding-bottom: 36px;
 }
 
 /* REGOLE MAIN */
-
 main {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 100px - 400px);
 }
 
 /* GEESTIONE PRIMA SEZIONE */
 #container-content {
     background-color: rgb(28, 28, 28);
-    height: 130px;
+    height: 45%;
 }
 
 #container-content div {
@@ -83,7 +87,7 @@ main {
 /* GESTIONE SECONDA SECTION */
 #container-cards {
     background-color: rgb(47, 131, 233);
-    height: 150px;
+    height: 55%;
 }
 
 #col {
@@ -94,7 +98,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 60px;
-
 }
 
 .card {
@@ -160,7 +163,9 @@ h4 {
     font-size: 11px;
 }
 
-
+#container-footer1 a:hover {
+    color: rgb(47, 131, 233);
+}
 
 /* SECONDO FOOTER */
 #second-footer {
