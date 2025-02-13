@@ -4,7 +4,7 @@ const navLinks = [
     { id: 3, text: "MOVIES", url: "#", current: false },
     { id: 4, text: "TV", url: "#", current: false },
     { id: 5, text: "GAMES", url: "#", current: false },
-    { id: 6, text: "COLLECTIBLES", url: "#" },
+    { id: 6, text: "COLLECTIBLES", url: "#", current: false },
     { id: 7, text: "VIDEOS", url: "#", current: false },
     { id: 8, text: "FANS", url: "#", current: false },
     { id: 9, text: "NEWS", url: "#", current: false },
@@ -19,7 +19,9 @@ export default function NavBar() {
                 {
                     navLinks.map((link) => (
                         <li key={link.id}>
-                            <a href={link.url}>{link.text}</a>
+                            <a href={link.url} className={link.current ? 'active' : ''}>
+                                {link.text}
+                            </a>
                         </li>
                     ))
                 }
@@ -27,15 +29,3 @@ export default function NavBar() {
         </div>
     );
 }
-
-// {
-//     /* <li><a href="#">CHARACTERS</a></li>
-//                 <li><a href="#">COMICS</a></li>
-//                 <li><a href="#">MOVIES</a></li>
-//                 <li><a href="#">TV</a></li>
-//                 <li><a href="#">GAMES</a></li>
-//                 <li><a href="#">COLLECTIBLES</a></li>
-//                 <li><a href="#">VIDEO</a></li>
-//                 <li><a href="#">FANS</a></li>
-//                 <li><a href="#">NEWS</a></li>
-//                 <li><a href="#">SHOP</a></li> */}
