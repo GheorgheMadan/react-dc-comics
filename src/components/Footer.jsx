@@ -1,89 +1,49 @@
+import DCcomicsShop from "./FooterComponents/DCcomicsShop";
+import DC from "./FooterComponents/DC"
+import Sites from "./FooterComponents/Sites"
+import Button from "./FooterComponents/Button";
+import Social from "./FooterComponents/Social";
 // Footer.jsx
 export default function Footer() {
+    const footerLinksDCcomics = [
+        { id: 1, text: "Characters", url: "#", current: false },
+        { id: 2, text: "Comics", url: "#", current: false },
+        { id: 3, text: "Movies", url: "#", current: false },
+        { id: 4, text: "TV", url: "#", current: false },
+        { id: 5, text: "Games", url: "#", current: false },
+        { id: 6, text: "Videos", url: "#", current: false },
+        { id: 7, text: "News", url: "#", current: false },
+    ];
+    const footerLinksShop = [
+        { id: 1, text: "Characters", url: "#", current: false },
+        { id: 2, text: "Comics", url: "#", current: false }
+    ];
+    const termLinks = [
+        { id: 1, text: "Terms Of", url: "#", current: false },
+        { id: 2, text: "Privacy policy (New)", url: "#", current: true },
+        { id: 3, text: "Ad Choices", url: "#", current: false },
+        { id: 4, text: "Advertising", url: "#", current: false },
+        { id: 5, text: "Jobs", url: "#", current: false },
+        { id: 6, text: "Subscriptions", url: "#", current: false },
+        { id: 7, text: "Talent Workshops", url: "#", current: false },
+        { id: 8, text: "CPSC Certificates", url: "#", current: false },
+        { id: 9, text: "Ratings", url: "#", current: false },
+        { id: 10, text: "Shop Help", url: "#", current: false },
+        { id: 9, text: "Contact Us", url: "#", current: false }
+    ];
     return (
         <footer>
             <section id="first-footer">
                 <div id="container-footer1">
-                    <div>
-                        <h4>DC COMICS</h4>
-                        <ul>
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
-                        <h4>SHOP</h4>
-                        <ul>
-                            <li><a href="#">Shop DC</a></li>
-                            <li><a href="#">Shop DC Collectibles</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>DC</h4>
-                        <ul>
-                            <li><a href="#">Terms Of</a></li>
-                            <li><a href="#">Privacy policy (New)</a></li>
-                            <li><a href="#">Ad Choices</a></li>
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Subscriptions</a></li>
-                            <li><a href="#">Talent Workshops</a></li>
-                            <li><a href="#">CPSC Certificates</a></li>
-                            <li><a href="#">Ratings</a></li>
-                            <li><a href="#">Shop Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>SITES</h4>
-                        <ul>
-                            <li><a href="#">DC</a></li>
-                            <li><a href="#">MAD Magazine</a></li>
-                            <li><a href="#">DC Kids</a></li>
-                            <li><a href="#">DC Universe</a></li>
-                            <li><a href="#">DC Power Visa</a></li>
-                        </ul>
-                    </div>
+                    <DCcomicsShop links={footerLinksDCcomics} linksShop={footerLinksShop} />
+                    <DC linksTerms={termLinks} />
+                    <Sites />
                 </div>
             </section>
             <section id="second-footer">
                 <section id="last-footer">
-                    <div>
-                        <button>SIGN-UP NOW!</button>
-                    </div>
-                    <div id="social-container">
-                        <div>
-                            <h6>FOLLOW US</h6>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="./public/img/footer-facebook.png" alt="" className="social" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="./public/img/footer-twitter.png" alt="" className="social" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="./public/img/footer-youtube.png" alt="" className="social" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="./public/img/footer-pinterest.png" alt="" className="social" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="./public/img/footer-periscope.png" alt="" className="social" />
-                            </a>
-                        </div>
-                    </div>
+                    <Button />
+                    <Social />
                 </section>
             </section>
         </footer>
