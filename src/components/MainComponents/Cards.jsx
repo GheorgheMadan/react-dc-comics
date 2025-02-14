@@ -1,8 +1,12 @@
+import comics from '../../../Data/comics.js'
+
 // Cards.jsx
 export default function Cards() {
     return (
         <div>
-            <p> --&gt; Content goes here &lt;-- </p>
+            {comics.map((element) => (
+                <li>{element.title}</li>
+            ))}
         </div>
     )
 }
