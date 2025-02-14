@@ -8,19 +8,18 @@
 /* regole header */
 header {
     background-color: white;
-    height: 100px;
-}
+    height: 420px;
 
-.container {
-    width: 75%;
-    margin: 0 auto;
 }
 
 .row {
-    height: 100%;
+    height: 23%;
+    max-height: 23%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 75%;
+    margin: 0 auto;
 }
 
 /* LOGO */
@@ -57,20 +56,27 @@ header {
     padding-bottom: 36px;
 }
 
+/* REGOLE JUMBOTRON */
+.jumbo-bg {
+    background-image: url('./assets/img/jumbotron.jpg');
+    background-size: cover;
+    height: 77%;
+}
+
 /* REGOLE MAIN */
 main {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 100px - 400px);
+    height: 100vh;
 }
 
 /* GEESTIONE PRIMA SEZIONE */
-#container-content {
+#container-cards {
     background-color: rgb(28, 28, 28);
-    height: 45%;
+    height: 80%;
 }
 
-#container-content div {
+#container-cards div {
     width: 75%;
     margin: 0 auto;
     height: 100%;
@@ -78,19 +84,19 @@ main {
     align-items: center;
 }
 
-#container-content div p {
+#container-cards div p {
     font-size: 20px;
     color: white;
     font-weight: bold;
 }
 
 /* GESTIONE SECONDA SECTION */
-#container-cards {
+#container-banner {
     background-color: rgb(47, 131, 233);
-    height: 55%;
+    height: 20%;
 }
 
-#col {
+#row-banner {
     width: 75%;
     margin: 0 auto;
     height: 100%;
@@ -100,14 +106,14 @@ main {
     gap: 60px;
 }
 
-.card {
+.banner {
     font-size: 12px;
     color: white;
     display: flex;
     align-items: center;
 }
 
-.imgCard {
+.imgBanner {
     width: 40px;
     margin-right: 16px;
 }
@@ -118,6 +124,9 @@ main {
 }
 
 /* GESTIONE FOOTER */
+footer {
+    height: 400px;
+}
 
 /* PRIMO FOOTER  */
 #first-footer {
@@ -125,7 +134,7 @@ main {
     background-repeat: no-repeat, no-repeat;
     background-position: center right 240px, center top;
     background-size: 450px, cover;
-    height: 300px;
+    height: 75%;
 }
 
 #logo-bg {
@@ -169,8 +178,8 @@ h4 {
 
 /* SECONDO FOOTER */
 #second-footer {
-    height: 100px;
     background-color: rgb(51, 51, 51);
+    height: 25%;
 }
 
 #last-footer {

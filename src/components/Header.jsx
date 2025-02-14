@@ -1,5 +1,7 @@
 import NavBar from "./HeaderComponents/NavBar";
 import Logo from "./HeaderComponents/Logo";
+import Jumbotron from './HeaderComponents/Jumbotron';
+
 
 // Header.jsx
 export default function Header() {
@@ -17,11 +19,12 @@ export default function Header() {
         { id: 10, text: "SHOP", url: "#", current: false }
     ];
     return (
-        <header className="container">
+        <header>
             <div className="row">
                 <Logo />
                 <NavBar links={navLinks} />
             </div>
+            <Jumbotron />
         </header >
     );
 } 
