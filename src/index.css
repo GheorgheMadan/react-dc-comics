@@ -67,33 +67,80 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 /* GEESTIONE PRIMA SEZIONE */
-#container-cards {
+#container-first-main {
     background-color: rgb(28, 28, 28);
-    height: 80%;
 }
 
-#container-cards div {
+/* CURRENT SERIES */
+.container-current-series {
     width: 75%;
     margin: 0 auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
-#container-cards div p {
-    font-size: 20px;
+.current-series {
+    font-weight: 700;
+    font-size: 16px;
     color: white;
-    font-weight: bold;
+    background-color: rgb(47, 131, 233);
+    border: 1px solid rgb(47, 131, 233);
+    padding: 6px 17px;
+}
+
+/* REGOLE CARD */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    gap: 21px;
+    padding: 7px;
+}
+
+.card {
+    color: white;
+    width: 15%;
+    font-size: 13px;
+}
+
+.card .thumb {
+    width: 100%;
+    max-height: 185px;
+    object-position: top;
+    object-fit: cover;
+    object-position: block;
+    padding-bottom: 10px;
+}
+
+/* GESTIONE LOAD MORE */
+.container-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.btn-load-more {
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(47, 131, 233);
+    border: 1px solid rgb(47, 131, 233);
+    text-align: center;
+    padding: 10px 40px;
+
 }
 
 /* GESTIONE SECONDA SECTION */
 #container-banner {
     background-color: rgb(47, 131, 233);
-    height: 20%;
+    height: 150px;
+
 }
 
 #row-banner {
